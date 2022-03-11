@@ -60,3 +60,10 @@ patches:
     - op: add
       path: /spec/sourceRepos/-
       value: https://github.com/rhacm-gitops/multi-tenancy-gitops-apps.git
+- target:
+    group: argoproj.io
+    kind: Application
+  patch: |-
+    - op: replace
+      path: /spec/destination/namespace
+      value: ${GIT_GITOPS_NAMESPACE}

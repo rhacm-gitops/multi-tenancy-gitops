@@ -2,10 +2,10 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: bootstrap-single-cluster
-  namespace: openshift-gitops
+  namespace: ${GIT_GITOPS_NAMESPACE}
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: ${GIT_GITOPS_NAMESPACE}
     server: https://kubernetes.default.svc
   project: default
   source:
