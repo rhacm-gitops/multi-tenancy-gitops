@@ -54,7 +54,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: open-cluster-management
     server: https://kubernetes.default.svc
-  - namespace: ${GIT_GITOPS_NAMESPACE}
+  - namespace: openshift-gitops
     server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   - group: ""
