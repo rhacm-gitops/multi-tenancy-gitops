@@ -14,8 +14,6 @@ resources:
 #- argocd/namespace-instana-agent.yaml
 #- argocd/namespace-robot-shop.yaml
 #- argocd/namespace-openshift-storage.yaml
-- argocd/namespace-open-cluster-management.yaml
-- argocd/namespace-rhacm-policies.yaml
 #- argocd/namespace-spp.yaml
 #- argocd/namespace-spp-velero.yaml
 #- argocd/namespace-baas.yaml
@@ -29,6 +27,9 @@ resources:
 #- argocd/storage.yaml
 #- argocd/infraconfig.yaml
 #- argocd/machinesets.yaml
+- argocd/namespace-open-cluster-management.yaml
+- argocd/namespace-rhacm-policies.yaml
+- argocd/rhacm-policies-install-gitops.yaml
 patches:
 - target:
     group: argoproj.io
