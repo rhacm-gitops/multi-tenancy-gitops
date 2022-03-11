@@ -77,8 +77,6 @@ spec:
     kind: Tuned
   - group: "batch"
     kind: Job
-  - group: "operator.open-cluster-management.io"
-    kind: MultiClusterHub
 
   roles:
   # A role which provides read-only access to all applications in the project

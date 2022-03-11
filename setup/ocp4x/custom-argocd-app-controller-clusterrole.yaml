@@ -360,3 +360,9 @@ rules:
       - policy
     resources:
       - podsecuritypolicies
+  - verbs:
+      - '*'
+    apiGroups:
+      - operator.open-cluster-management.io
+    resources:
+      - multiclusterhubs
