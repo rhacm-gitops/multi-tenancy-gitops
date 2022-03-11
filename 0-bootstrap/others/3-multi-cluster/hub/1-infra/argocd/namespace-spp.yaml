@@ -1,17 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-single-cluster
-  namespace: openshift-gitops
+  name: namespace-spp
+  labels:
+    gitops.tier.layer: infra
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
-  project: default
+  project: infra
   source:
-    path: 0-bootstrap/single-cluster
-    repoURL: https://github.com/rhacm-gitops/multi-tenancy-gitops.git
-    targetRevision: master
+    path: namespaces/spp
   syncPolicy:
     automated:
       prune: true
