@@ -96,6 +96,10 @@ resources:
 #- argocd/instances/oadp-instance.yaml
 #- argocd/instances/baas-instance.yaml
 
+# RHACM
+- argocd/operators/rhacm-operator.yaml
+#- argocd/instances/rhacm-instance.yaml
+
 patches:
 - target:
     group: argoproj.io
