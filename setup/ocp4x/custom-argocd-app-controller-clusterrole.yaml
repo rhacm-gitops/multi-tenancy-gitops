@@ -378,4 +378,9 @@ rules:
       - external-secrets.io
     resources:
       - clustersecretstores
+  - verbs:
+      - '*'
+    apiGroups:
+      - operator.external-secrets.io
+    resources:
       - operatorconfigs
