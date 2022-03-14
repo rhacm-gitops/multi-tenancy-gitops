@@ -100,7 +100,7 @@ resources:
 - argocd/operators/rhacm-operator.yaml
 - argocd/instances/rhacm-instance.yaml
 - argocd/operators/external-secrets.yaml
-- argocd/instances/external-secrets.yaml
+# - argocd/instances/external-secrets.yaml
 
 patches:
 - target:
