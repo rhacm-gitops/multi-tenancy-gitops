@@ -372,3 +372,10 @@ rules:
       - apps.open-cluster-management.io
     resources:
       - placementrules
+  - verbs:
+      - '*'
+    apiGroups:
+      - external-secrets.io
+    resources:
+      - secretstores
+      - clustersecretstores
