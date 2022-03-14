@@ -27,9 +27,15 @@ resources:
 #- argocd/storage.yaml
 #- argocd/infraconfig.yaml
 #- argocd/machinesets.yaml
+
+# External Secrets Operator
+- argocd/namespace-external-secrets.yaml
+
+# RHACM
 - argocd/namespace-open-cluster-management.yaml
 - argocd/namespace-rhacm-policies.yaml
 - argocd/rhacm-policies-install-gitops.yaml
+- argocd/rhacm-provider-credentials.yaml
 patches:
 - target:
     group: argoproj.io
