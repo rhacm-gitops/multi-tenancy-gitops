@@ -29,7 +29,7 @@ resources:
 #- argocd/machinesets.yaml
 - argocd/namespace-open-cluster-management.yaml
 - argocd/namespace-rhacm-policies.yaml
-#- argocd/rhacm-policies-install-gitops.yaml
+- argocd/rhacm-policies-install-gitops.yaml
 patches:
 - target:
     group: argoproj.io
