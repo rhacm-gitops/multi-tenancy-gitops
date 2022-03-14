@@ -377,5 +377,5 @@ rules:
     apiGroups:
       - external-secrets.io
     resources:
-      - secretstores
       - clustersecretstores
+      - operatorconfigs
