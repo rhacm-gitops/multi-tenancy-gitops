@@ -404,6 +404,9 @@ rules:
       - cluster.open-cluster-management.io
     resources:
       - managedclusters
+      - managedclusters/accept
+      - managedclusters/status
+      - managedclustersets
       - managedclustersets/join
   - verbs:
       - '*'
@@ -424,4 +427,9 @@ rules:
       - internal.open-cluster-management.io/v1beta1
     resources:
       - ManagedClusterInfo
-            
+  - apiGroups:
+    - register.open-cluster-management.io
+    resources:
+    - managedclusters/accept
+    verbs:
+    - update

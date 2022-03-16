@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: rhacm-cluster-azure-hive-c2
+  name: rhacm-cluster-azure-hive-c1
   labels:
     gitops.tier.layer: infra
   annotations:
@@ -23,7 +23,7 @@ spec:
       values: |
         hivecluster:
           cluster:
-            name: "azure-hive-c2"
+            name: "azure-hive-c1"
             vendor: "OpenShift"
             baseDomain: azure.ibm-gtmaa.dev
             version: 4.9.23
