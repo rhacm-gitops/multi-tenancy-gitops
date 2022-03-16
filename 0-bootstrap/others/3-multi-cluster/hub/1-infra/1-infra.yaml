@@ -93,6 +93,9 @@ spec:
     kind: ManagedCluster
   - group: clusterview.open-cluster-management.io
     kind: ManagedClusterSet
+  - group: policy.open-cluster-management.io
+    kind: placementbindings
+
     
 
   roles:
