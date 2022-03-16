@@ -65,6 +65,8 @@ spec:
   # RHACM Application Channel Namespace
   - namespace: ggithubcom-rhacm-gitops-multi-tenancy-gitops-ns
     server: https://kubernetes.default.svc
+  - namespace: rhacm-placement
+    server: https://kubernetes.default.svc
   # end RHACM namespaces
   clusterResourceWhitelist:
   - group: ""
@@ -95,6 +97,10 @@ spec:
     kind: ManagedClusterSet
   - group: policy.open-cluster-management.io
     kind: placementbindings
+  - group: policy.open-cluster-management.io
+    kind: policies
+  - group: apps.open-cluster-management.io
+    kind: Channel
 
     
 
