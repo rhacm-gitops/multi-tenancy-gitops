@@ -421,15 +421,29 @@ rules:
       - apps.open-cluster-management.io
     resources:
       - channels
-  - verbs:
-      - '*'
-    apiGroups:
-      - internal.open-cluster-management.io/v1beta1
+  - apiGroups:
+      - internal.open-cluster-management.io
     resources:
-      - ManagedClusterInfo
+      - managedclusterinfos
+    verbs:
+      - '*'
   - apiGroups:
     - register.open-cluster-management.io
     resources:
     - managedclusters/accept
     verbs:
+    - '*'
+  - apiGroups:
+    - klusterletaddonconfigs.agent.open-cluster-management.io
+    - manageclusters.cluster.open-cluster-management.io
+    - managedclusteractions.action.open-cluster-management.io
+    - managedclusterviews.view.open-cluster-management.io
+    - manifestworks.work.open-cluster-management.io
+    resources:
+    - '*'
+    verbs:
+    - create
     - update
+    
+
+
