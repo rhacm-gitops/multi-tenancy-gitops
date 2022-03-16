@@ -91,7 +91,7 @@ spec:
     kind: Job
   - group: cluster.open-cluster-management.io
     kind: ManagedCluster
-  - group: cluster.open-cluster-management.io
+  - group: clusterview.open-cluster-management.io
     kind: ManagedClusterSet
     
 
