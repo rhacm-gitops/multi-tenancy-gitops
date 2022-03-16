@@ -38,7 +38,7 @@ resources:
 - argocd/rhacm-provider-credentials.yaml
 
 # RHACM Hive Clusters
-# - argocd/rhacm-cluster-azure-hive-c1.yaml
+- argocd/rhacm-cluster-azure-hive-c3.yaml
 patches:
 - target:
     group: argoproj.io
