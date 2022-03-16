@@ -1,0 +1,40 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: rhacm-cluster-azure-hive-c1
+  labels:
+    gitops.tier.layer: infra
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  destination:
+    namespace: openshift-gitops
+    server: https://kubernetes.default.svc
+  project: infra
+  source:
+    path: rhacm/cluster
+    helm:
+      values: |
+        hivecluster:
+          cluster:
+            name: "azure-hive-c1"
+            vendor: "OpenShift"
+            baseDomain: azure.ibm-gtmaa.dev
+            version: 4.9.23
+
+          cloud:
+            provider: "Azure"
+            region: "eastus2"
+            azure:
+              baseDomainResourceGroupName: "ncolon-openshift4-rg"
+  ignoreDifferences:
+  - group: hive.openshift.io
+    kind: ClusterDeployment
+    jsonPointers:
+    - /spec/installed
