@@ -59,6 +59,9 @@ spec:
   - namespace: rhacm-policies
     server: https://kubernetes.default.svc
   - namespace: azure-hive-c1
+    server: https://kubernetes.default.svc
+  - namespace: ggithubcom-rhacm-gitops-multi-tenancy-gitops-ns
+    server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace
