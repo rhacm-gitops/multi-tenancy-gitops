@@ -66,6 +66,8 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: azure-hive-c3
     server: https://kubernetes.default.svc
+  - namespace: azure-hive-c4
+    server: https://kubernetes.default.svc
   # RHACM Application Channel Namespace
   - namespace: ggithubcom-rhacm-gitops-multi-tenancy-gitops-ns
     server: https://kubernetes.default.svc
