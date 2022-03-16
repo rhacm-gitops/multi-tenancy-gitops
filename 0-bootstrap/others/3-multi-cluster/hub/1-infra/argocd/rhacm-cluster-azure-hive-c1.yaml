@@ -21,7 +21,7 @@ spec:
     path: rhacm/cluster
     helm:
       values: |
-        rhacm-hivecluster:
+        hivecluster:
           cluster:
             name: "azure-hive-c1"
             vendor: "OpenShift"
