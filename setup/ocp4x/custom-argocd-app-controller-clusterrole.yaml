@@ -385,3 +385,33 @@ rules:
       - operator.external-secrets.io
     resources:
       - operatorconfigs
+  - verbs:
+      - '*'
+    apiGroups:
+      - hive.openshift.io
+    resources:
+      - machinepools
+      - clusterdeployments
+  - verbs:
+      - '*'
+    apiGroups:
+      - agent.open-cluster-management.io
+    resources:
+      - klusterletaddonconfigs
+  - verbs:
+      - '*'
+    apiGroups:
+      - cluster.open-cluster-management.io
+    resources:
+      - managedclusters
+      - managedclustersets
+
+  - verbs:
+      - '*'
+    apiGroups:
+      - clusterview.open-cluster-management.io
+    resources:
+      - managedclustersets
+
+            
+            
