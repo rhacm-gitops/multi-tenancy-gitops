@@ -418,5 +418,10 @@ rules:
       - apps.open-cluster-management.io
     resources:
       - channels
-            
+  - verbs:
+      - '*'
+    apiGroups:
+      - internal.open-cluster-management.io/v1beta1
+    resources:
+      - ManagedClusterInfo
             
