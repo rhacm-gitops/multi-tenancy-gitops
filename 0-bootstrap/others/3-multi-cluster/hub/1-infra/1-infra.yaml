@@ -60,7 +60,7 @@ spec:
   - namespace: rhacm-policies
     server: https://kubernetes.default.svc
   # RHACM Cluster Namespace, one per cluster
-  - namespace: azure-hive-c1
+  - namespace: azure-hive-c2
     server: https://kubernetes.default.svc
   # RHACM Application Channel Namespace
   - namespace: ggithubcom-rhacm-gitops-multi-tenancy-gitops-ns
