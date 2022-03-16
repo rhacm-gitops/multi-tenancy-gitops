@@ -36,6 +36,9 @@ resources:
 - argocd/namespace-rhacm-policies.yaml
 - argocd/rhacm-policies-install-gitops.yaml
 - argocd/rhacm-provider-credentials.yaml
+
+# RHACM Hive Clusters
+- argocd/rhacm-cluster-azure-hive-c1.yaml
 patches:
 - target:
     group: argoproj.io
