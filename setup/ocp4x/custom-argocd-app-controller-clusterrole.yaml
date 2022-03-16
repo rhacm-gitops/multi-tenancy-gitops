@@ -404,14 +404,19 @@ rules:
       - cluster.open-cluster-management.io
     resources:
       - managedclusters
-      - managedclustersets
-
+      - managedclustersets/join
   - verbs:
       - '*'
     apiGroups:
-      - clusterview.open-cluster-management.io
+      - policy.open-cluster-management.io 
     resources:
-      - managedclustersets
-
+      - policies
+      - placementbindings
+  - verbs:
+      - '*'
+    apiGroups:
+      - apps.open-cluster-management.io
+    resources:
+      - channels
             
             

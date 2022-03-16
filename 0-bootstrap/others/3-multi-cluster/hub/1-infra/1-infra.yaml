@@ -95,12 +95,6 @@ spec:
     kind: ManagedCluster
   - group: clusterview.open-cluster-management.io
     kind: ManagedClusterSet
-  - group: policy.open-cluster-management.io
-    kind: placementbindings
-  - group: policy.open-cluster-management.io
-    kind: policies
-  - group: apps.open-cluster-management.io
-    kind: Channel
 
     
 
