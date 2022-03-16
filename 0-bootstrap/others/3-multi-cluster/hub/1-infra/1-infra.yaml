@@ -58,6 +58,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: rhacm-policies
     server: https://kubernetes.default.svc
+  - namespace: azure-hive-c1
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace
