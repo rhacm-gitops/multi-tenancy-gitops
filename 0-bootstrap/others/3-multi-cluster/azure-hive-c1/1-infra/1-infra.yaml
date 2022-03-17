@@ -106,7 +106,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source: # repoURL  and targetRevision populated by kustomize patches in 1-infra/kustomization.yaml
-    path: 0-bootstrap/others/3-multi-cluster/azure-hive-c4/1-infra
+    path: 0-bootstrap/others/3-multi-cluster/azure-hive-c1/1-infra
   syncPolicy:
     automated:
       prune: true
