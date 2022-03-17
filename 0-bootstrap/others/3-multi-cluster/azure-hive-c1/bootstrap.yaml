@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-hub
+  name: bootstrap-azure-hive-c1
   namespace: openshift-gitops
 spec:
   destination:
