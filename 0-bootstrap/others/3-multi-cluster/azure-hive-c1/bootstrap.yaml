@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/others/3-multi-cluster/azure-hive-c4
+    path: 0-bootstrap/others/3-multi-cluster/azure-hive-c1
     repoURL: https://github.com/rhacm-gitops/multi-tenancy-gitops.git
     targetRevision: master
   syncPolicy:
