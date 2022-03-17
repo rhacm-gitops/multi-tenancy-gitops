@@ -372,6 +372,7 @@ rules:
       - apps.open-cluster-management.io
     resources:
       - placementrules
+      - subscriptions
   - verbs:
       - '*'
     apiGroups:
