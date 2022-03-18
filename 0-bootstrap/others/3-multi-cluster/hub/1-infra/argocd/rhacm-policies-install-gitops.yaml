@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: rhacm-policies-install-gitops-placementrule
+  name: rhacm-policies-install-gitops
   labels:
     gitops.tier.layer: infra
   annotations:
