@@ -444,7 +444,9 @@ rules:
     - '*'
     verbs:
     - create
+    - read
     - update
+    - delete
     
 
 
