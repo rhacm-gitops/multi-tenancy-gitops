@@ -38,5 +38,3 @@ spec:
     kind: ClusterDeployment
     jsonPointers:
     - /spec/installed
-  - group: hive.openshift.io
-    kind: ClusterDeployment
