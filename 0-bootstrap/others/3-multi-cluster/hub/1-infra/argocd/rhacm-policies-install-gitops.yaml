@@ -19,12 +19,12 @@ spec:
     automated:
       prune: true
       selfHeal: true
-ignoreDifferences:
-  - group: "*"
-    kind: "*"
-    managedFieldsManagers:
-    - governance-policy-propagator
-  - group: "*"
-    kind: "*"
-    managedFieldsManagers:
-    - governance-policy-status-sync
+  ignoreDifferences:
+    - group: "*"
+      kind: "*"
+      managedFieldsManagers:
+      - governance-policy-propagator
+    - group: "*"
+      kind: "*"
+      managedFieldsManagers:
+      - governance-policy-status-sync
