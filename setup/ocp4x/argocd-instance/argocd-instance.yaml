@@ -592,7 +592,7 @@ spec:
         if obj.status ~= nil then
           if obj.status.conditions ~= nil then
             for i, condition in ipairs(obj.status.conditions) do
-              if condition.type == "ClusterInstallCompleted" and condition.status == "True" then
+              if condition.type == "Hibernating" and condition.status == "False" then
                 hs.status = "Healthy"
                 hs.message = condition.message
                 return hs
