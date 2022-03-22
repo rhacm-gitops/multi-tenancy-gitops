@@ -34,8 +34,8 @@ resources:
 # RHACM
 - argocd/namespace-open-cluster-management.yaml
 - argocd/namespace-rhacm-policies.yaml
-- argocd/rhacm-policies-install-gitops.yaml
-- argocd/rhacm-provider-credentials.yaml
+# - argocd/rhacm-policies-install-gitops.yaml
+# - argocd/rhacm-provider-credentials.yaml
 
 # RHACM Hive Clusters
 # - argocd/rhacm-cluster-azure-hive-c1.yaml
