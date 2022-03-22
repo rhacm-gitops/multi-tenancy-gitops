@@ -97,7 +97,7 @@ resources:
 #- argocd/instances/baas-instance.yaml
 
 # RHACM
-# - argocd/operators/rhacm-operator.yaml
+- argocd/operators/rhacm-operator.yaml
 # - argocd/instances/rhacm-instance.yaml
 
 # External Secrets Operator
