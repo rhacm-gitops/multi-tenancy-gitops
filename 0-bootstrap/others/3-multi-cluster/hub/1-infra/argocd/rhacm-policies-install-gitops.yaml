@@ -6,7 +6,7 @@ metadata:
     gitops.tier.layer: infra
   annotations:
     argocd.argoproj.io/sync-wave: "100"
-    argocd.argoproj.io/compare-options: IgnoreExtraneous
+    # argocd.argoproj.io/compare-options: IgnoreExtraneous
     # argocd.argoproj.io/sync-options: Prune=false
 spec:
   destination:
@@ -19,3 +19,12 @@ spec:
     automated:
       prune: true
       selfHeal: true
+  # ignoreDifferences:
+  #   - group: "*"
+  #     kind: "*"
+  #     managedFieldsManagers:
+  #     - governance-policy-propagator
+  #   - group: "*"
+  #     kind: "*"
+  #     managedFieldsManagers:
+  #     - governance-policy-status-sync
