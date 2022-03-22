@@ -90,10 +90,10 @@ spec:
     kind: PodSecurityPolicy
   - group: ""
     kind: PersistentVolume
+  - group: external-secrets.io
+    kind: ClusterSecretStore
   # - group: "operator.open-cluster-management.io"
   #   kind: MultiClusterHub
-  # - group: external-secrets.io
-  #   kind: ClusterSecretStore
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
