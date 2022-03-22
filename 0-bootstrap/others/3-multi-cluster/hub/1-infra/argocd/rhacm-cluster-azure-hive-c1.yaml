@@ -11,7 +11,7 @@ metadata:
 spec:
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: true
   destination:
     namespace: openshift-gitops
