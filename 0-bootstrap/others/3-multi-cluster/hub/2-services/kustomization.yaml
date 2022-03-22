@@ -104,6 +104,10 @@ resources:
 - argocd/operators/external-secrets.yaml
 - argocd/instances/external-secrets.yaml
 
+# Cert Manager Community Edition
+- argocd/operators/cert-manager-community.yaml
+# - argocd/instances/cert-manager-community-instance.yaml
+
 patches:
 - target:
     group: argoproj.io
