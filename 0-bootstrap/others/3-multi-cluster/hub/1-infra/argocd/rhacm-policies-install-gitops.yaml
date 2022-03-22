@@ -17,10 +17,10 @@ spec:
   project: infra
   source:
     path: rhacm/policies/install-gitops
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+  syncPolicy: {}
+    # automated:
+    #   prune: true
+    #   selfHeal: true
   # ignoreDifferences:
   #   - group: "*"
   #     kind: "*"
