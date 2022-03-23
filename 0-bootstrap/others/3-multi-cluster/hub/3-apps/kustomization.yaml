@@ -32,7 +32,7 @@ resources:
 - argocd/rhacm/policies/install-gitops.yaml
 
 # RHACM Credentials
-- argocd/rhacm/provider/credentials.yaml
+- argocd/rhacm/providers/credentials.yaml
 
 # RHACM Hive Clusters
 # - argocd/rhacm/cluster/azure-hive-c1.yaml
