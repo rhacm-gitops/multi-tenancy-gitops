@@ -32,6 +32,7 @@ resources:
 - argocd/namespace-external-secrets.yaml
 
 # RHACM
+- argocd/rbac/rhacm.yaml
 - argocd/namespace-open-cluster-management.yaml
 - argocd/namespace-rhacm-policies.yaml
 - argocd/namespace-multi-tenancy-gitops-channel.yaml
