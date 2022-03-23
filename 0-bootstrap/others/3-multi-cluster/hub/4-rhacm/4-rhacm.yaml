@@ -52,7 +52,7 @@ spec:
     server: https://kubernetes.default.svc
   project: rhacm
   source: # repoURL  and targetRevision populated by kustomize patches in 3-apps/kustomization.yaml
-    path: 0-bootstrap/others/3-multi-cluster/hub/3-apps
+    path: 0-bootstrap/others/3-multi-cluster/hub/4-rhacm
   syncPolicy:
     automated:
       prune: true
