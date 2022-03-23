@@ -34,6 +34,7 @@ resources:
 # RHACM
 - argocd/namespace-open-cluster-management.yaml
 - argocd/namespace-rhacm-policies.yaml
+- argocd/namespace-multi-tenancy-gitops-channel.yaml
 
 patches:
 - target:
