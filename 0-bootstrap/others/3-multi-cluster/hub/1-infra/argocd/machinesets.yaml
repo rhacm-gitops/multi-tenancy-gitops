@@ -18,16 +18,18 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "${INFRASTRUCTURE_ID}"
+          infrastructureId: "rhacm-gitops-m7q3g"
           # cloudProvider.name set to aws, azure, ibmcloud or vsphere
           # cloudProvider.managed set to true for ROSA, ARO, ROKS
           cloudProvider:
-            name: "${PLATFORM}" 
-            managed: ${MANAGED}
+            name: "ibmcloud" 
+            managed: false
           # only for "aws", "ibmcloud" or "azure" maybe "gcp"
           cloud:
-            region: ${REGION}
-            image: ${IMAGE_NAME}
+            region: us-east
+            image: notused
+            infraNodes:
+              nodeCount: "0"
           # only for "vsphere" - ignored for other
           vsphere:
             networkName: ${VS_NETWORK}

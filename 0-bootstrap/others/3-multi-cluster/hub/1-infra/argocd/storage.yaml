@@ -18,9 +18,9 @@ spec:
     helm:
       values: |
         odf-operator:
-          channel: ${CHANNEL}
-          sizeGiB: 512
-          storageClass: ${STORCLASS}
+          channel: stable-4.9
+          sizeGiB: 1024
+          storageClass: ibmc-vpc-block-10iops-tier
           argo:
             namespace: openshift-gitops
             serviceAccount: openshift-gitops-cntk-argocd-application-controller
