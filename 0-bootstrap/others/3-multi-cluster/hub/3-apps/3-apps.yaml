@@ -30,6 +30,14 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openshift-operators
     server: https://kubernetes.default.svc
+  - namespace: azure-hive-c1
+    server: https://kubernetes.default.svc
+  - namespace: azure-hive-c2
+    server: https://kubernetes.default.svc
+  - namespace: azure-hive-c3
+    server: https://kubernetes.default.svc
+  - namespace: azure-hive-c4
+    server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   # TODO: SCC needs to be moved to 1-infra, here for now pipeline sa for buildah
   - group: "security.openshift.io"
