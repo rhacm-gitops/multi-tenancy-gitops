@@ -57,6 +57,7 @@ spec:
       ignoreDifferences: |
         jsonPointers:
         - /metadata/annotations/olm.providedAPIs
+        - /status/lastUpdated
     argoproj.io/Application:
       health.lua: |
         hs = {}
@@ -568,7 +569,7 @@ spec:
         hs.status = "Progressing"
         hs.message = "Unknown"
         return hs
-    machine.openshift.io/MachineSet:
+    machine.openshift.io/obj.sta:
       health.lua: |
         hs = {}
         if obj.status ~= nil then
@@ -603,6 +604,23 @@ spec:
           end
         end
         hs.status = "Progressing"
+        return hs
+    ocs.openshift.io/StorageCluster:
+      health.lua: |
+        hs = {}
+        if obj.status ~= nil then
+          if obj.status.phase ~= nil then
+            hs.message = obj.status.phase
+            if obj.status.phase == "Ready" then
+              hs.status = "Healthy"
+            else
+              hs.status = "Progressing"
+            end
+            return hs
+          end
+        end
+        hs.status = "Progressing"
+        hs.message = "Unknown"
         return hs
   applicationSet:
     resources:
