@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: rhacm-policies-install-gitops
   labels:
-    gitops.tier.layer: infra
+    gitops.tier.layer: applications
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:

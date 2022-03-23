@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: rhacm-cluster-azure-hive-c1
   labels:
-    gitops.tier.layer: infra
+    gitops.tier.layer: applications
   annotations:
     argocd.argoproj.io/sync-wave: "100"
   finalizers:
