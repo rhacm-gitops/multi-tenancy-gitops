@@ -18,7 +18,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: azure-hive-c1
     server: https://kubernetes.default.svc
-  - namespace: 'azure-hive-c*''
+  - namespace: 'azure-hive-c*'
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace
