@@ -29,6 +29,7 @@ resources:
 - argocd/machinesets.yaml
 
 # External Secrets Operator
+- argocd/rbac/externalsecrets.yaml
 - argocd/namespace-external-secrets.yaml
 
 # RHACM
