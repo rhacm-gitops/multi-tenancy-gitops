@@ -1,26 +1,26 @@
 resources:
 # RHACM Policies
-- argocd/rhacm/policies/install-gitops.yaml
+- argocd/policies/install-gitops.yaml
 
 # RHACM Credentials
-- argocd/rhacm/providers/credentials.yaml
+- argocd/providers/credentials.yaml
 
 # RHACM Hive Clusters
-# - argocd/rhacm/cluster/azure-hive-c1.yaml
-# - argocd/rhacm/cluster/azure-hive-c2.yaml
-# - argocd/rhacm/cluster/azure-hive-c3.yaml
-# - argocd/rhacm/cluster/azure-hive-c4.yaml
+# - argocd/cluster/azure-hive-c1.yaml
+# - argocd/cluster/azure-hive-c2.yaml
+# - argocd/cluster/azure-hive-c3.yaml
+# - argocd/cluster/azure-hive-c4.yaml
 
 
 patches:
 - target:
     group: argoproj.io
     kind: Application
-    labelSelector: "gitops.tier.layer=applications"
+    labelSelector: "gitops.tier.layer=rhacm"
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/rhacm-gitops/multi-tenancy-gitops-apps.git
+      value: https://github.com/rhacm-gitops/multi-tenancy-gitops-rhacm.git
     - op: add
       path: /spec/source/targetRevision
       value: master

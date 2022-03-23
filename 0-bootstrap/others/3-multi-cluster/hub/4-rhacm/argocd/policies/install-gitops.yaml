@@ -3,14 +3,14 @@ kind: Application
 metadata:
   name: rhacm-policies-install-gitops
   labels:
-    gitops.tier.layer: applications
+    gitops.tier.layer: rhacm
   annotations:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
     namespace: rhacm-policies
     server: https://kubernetes.default.svc
-  project: applications
+  project: rhacm
   source:
     path: rhacm/policies/install-gitops
   syncPolicy:

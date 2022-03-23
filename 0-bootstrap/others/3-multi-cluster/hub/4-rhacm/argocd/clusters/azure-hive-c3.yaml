@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: rhacm-cluster-azure-hive-c3
   labels:
-    gitops.tier.layer: applications
+    gitops.tier.layer: rhacm
   annotations:
     argocd.argoproj.io/sync-wave: "100"
   finalizers:
@@ -16,7 +16,7 @@ spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
-  project: applications
+  project: rhacm
   source:
     path: rhacm/cluster
     helm:
