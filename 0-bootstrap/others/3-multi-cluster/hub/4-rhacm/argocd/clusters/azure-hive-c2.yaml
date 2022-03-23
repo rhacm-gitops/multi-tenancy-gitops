@@ -18,7 +18,7 @@ spec:
     server: https://kubernetes.default.svc
   project: rhacm
   source:
-    path: rhacm/cluster
+    path: clusters
     helm:
       values: |
         hivecluster:
