@@ -99,6 +99,7 @@ resources:
 # RHACM
 - argocd/operators/rhacm-operator.yaml
 - argocd/instances/rhacm-instance.yaml
+- argocd/instances/rhacm-observability-instance.yaml
 
 # External Secrets Operator
 - argocd/operators/external-secrets.yaml

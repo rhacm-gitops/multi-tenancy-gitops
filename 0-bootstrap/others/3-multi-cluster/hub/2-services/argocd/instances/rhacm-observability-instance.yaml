@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: openshift-acm-observability-instance
+  name: rhacm-observability-instance
   annotations:
     argocd.argoproj.io/sync-wave: "260"
     # argocd.argoproj.io/compare-options: IgnoreExtraneous
@@ -14,7 +14,7 @@ spec:
     server: https://kubernetes.default.svc
   project: services
   source:
-    path: instances/openshift-acm-observability-instance
+    path: instances/rhacm-observability
   syncPolicy:
     automated:
       prune: true
