@@ -29,17 +29,16 @@ resources:
 #- argocd/cp4a/cp4a.yaml
 
 # RHACM Policies
-- argocd/rhacm/policies/install-gitops.yaml
+# - argocd/rhacm/policies/install-gitops.yaml
 
 # RHACM Credentials
-- argocd/rhacm/providers/credentials.yaml
+# - argocd/rhacm/providers/credentials.yaml
 
 # RHACM Hive Clusters
-- argocd/rhacm/cluster/azure-hive-c1.yaml
+# - argocd/rhacm/cluster/azure-hive-c1.yaml
 # - argocd/rhacm/cluster/azure-hive-c2.yaml
 # - argocd/rhacm/cluster/azure-hive-c3.yaml
 # - argocd/rhacm/cluster/azure-hive-c4.yaml
-
 
 patches:
 - target:
