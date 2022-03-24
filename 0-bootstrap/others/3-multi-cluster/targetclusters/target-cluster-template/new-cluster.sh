@@ -17,4 +17,5 @@ find . -name '*.yaml' -print0 |
       rm "${File}.bak"
     fi
   done
+rm new-cluster.sh
 echo "git commit and push changes now"
