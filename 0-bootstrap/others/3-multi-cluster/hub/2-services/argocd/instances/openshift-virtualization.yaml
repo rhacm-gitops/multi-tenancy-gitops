@@ -7,13 +7,14 @@ metadata:
   labels:
     gitops.tier.group: cntk
     gitops.tier.layer: services
+    gitops.tier.source: git
 spec:
   destination:
     namespace: openshift-cnv
     server: https://kubernetes.default.svc
   project: services
   source:
-    path: instances/openshift-virtualization-instance
+    path: instances/openshift-virtualization
   syncPolicy:
     automated:
       prune: true
