@@ -39,6 +39,9 @@ resources:
 - argocd/namespace-multi-tenancy-gitops-channel.yaml
 - argocd/namespace-rhacm-observability.yaml
 
+# OpenShift Virtualization
+- argocd/namespace-openshift-cnv.yaml
+
 patches:
 - target:
     group: argoproj.io
