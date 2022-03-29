@@ -107,7 +107,7 @@ resources:
 
 # OpenShift Virtualization
 - argocd/operators/openshift-virtualization.yaml
-# - argocd/instances/openshift-virtualization.yaml
+- argocd/instances/openshift-virtualization.yaml
 
 patches:
 - target:
