@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespace-turbonomic
+  name: namespace-turbonomics
   namespace: openshift-gitops
   labels:
     gitops.tier.layer: infra
@@ -9,7 +9,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: turbonomic
+    namespace: turbonomics
     server: https://kubernetes.default.svc
   project: infra
   source:
