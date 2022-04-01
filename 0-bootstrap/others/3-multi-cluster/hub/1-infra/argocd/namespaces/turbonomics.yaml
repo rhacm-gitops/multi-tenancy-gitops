@@ -13,7 +13,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/turbonomic
+    path: namespaces/turbonomics
   syncPolicy:
     automated:
       prune: true
