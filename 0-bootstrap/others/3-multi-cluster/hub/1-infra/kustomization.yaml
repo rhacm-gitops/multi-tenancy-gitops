@@ -34,14 +34,14 @@ resources:
 
 # RHACM
 - argocd/rbac/rhacm.yaml
-- argocd/namespace/open-cluster-management.yaml
-- argocd/namespace/rhacm-policies.yaml
-- argocd/namespace/multi-tenancy-gitops-channel.yaml
-- argocd/namespace/rhacm-observability.yaml
+- argocd/namespaces/open-cluster-management.yaml
+- argocd/namespaces/rhacm-policies.yaml
+- argocd/namespaces/multi-tenancy-gitops-channel.yaml
+- argocd/namespaces/rhacm-observability.yaml
 
 # OpenShift Virtualization
 - argocd/rbac/openshift-virtualization.yaml
-- argocd/namespace/openshift-virtualization.yaml
+- argocd/namespaces/openshift-virtualization.yaml
 
 patches:
 - target:
