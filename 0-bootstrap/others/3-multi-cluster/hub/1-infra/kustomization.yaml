@@ -30,7 +30,7 @@ resources:
 
 # External Secrets Operator
 - argocd/rbac/externalsecrets.yaml
-- argocd/namespace/external-secrets.yaml
+- argocd/namespaces/external-secrets.yaml
 
 # RHACM
 - argocd/rbac/rhacm.yaml
