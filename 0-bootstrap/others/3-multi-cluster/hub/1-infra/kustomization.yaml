@@ -30,18 +30,18 @@ resources:
 
 # External Secrets Operator
 - argocd/rbac/externalsecrets.yaml
-- argocd/namespace-external-secrets.yaml
+- argocd/namespace/external-secrets.yaml
 
 # RHACM
 - argocd/rbac/rhacm.yaml
-- argocd/namespace-open-cluster-management.yaml
-- argocd/namespace-rhacm-policies.yaml
-- argocd/namespace-multi-tenancy-gitops-channel.yaml
-- argocd/namespace-rhacm-observability.yaml
+- argocd/namespace/open-cluster-management.yaml
+- argocd/namespace/rhacm-policies.yaml
+- argocd/namespace/multi-tenancy-gitops-channel.yaml
+- argocd/namespace/rhacm-observability.yaml
 
 # OpenShift Virtualization
 - argocd/rbac/openshift-virtualization.yaml
-- argocd/namespace-openshift-cnv.yaml
+- argocd/namespace/openshift-virtualization.yaml
 
 patches:
 - target:

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: open-cluster-management-namespace
+  name: namespace-rhacm-policies
   labels:
     gitops.tier.layer: infra
   annotations:
@@ -12,7 +12,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: namespaces/open-cluster-management
+    path: namespaces/rhacm-policies
   syncPolicy:
     automated:
       prune: true
