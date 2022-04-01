@@ -43,8 +43,8 @@ resources:
 - argocd/rbac/openshift-virtualization.yaml
 - argocd/namespaces/openshift-virtualization.yaml
 
-# Turbonomics
-- argocd/namespaces/turbonomics.yaml
+# turbonomic
+- argocd/namespaces/turbonomic.yaml
 
 
 patches:

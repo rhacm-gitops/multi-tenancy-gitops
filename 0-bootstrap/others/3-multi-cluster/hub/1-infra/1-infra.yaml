@@ -60,7 +60,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openshift-operators
     server: https://kubernetes.default.svc
-  - namespace: turbonomics
+  - namespace: turbonomic
     server: https://kubernetes.default.svc
   # # RHACM Policies Namespace
   # - namespace: rhacm-policies
