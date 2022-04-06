@@ -34,6 +34,10 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: instana-agent
     server: https://kubernetes.default.svc
+  - namespace: instana-core
+    server: https://kubernetes.default.svc
+  - namespace: instana-units
+    server: https://kubernetes.default.svc
   - namespace: openshift-gitops
     server: https://kubernetes.default.svc
   - namespace: openshift-machine-api
