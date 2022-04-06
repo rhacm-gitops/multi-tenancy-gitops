@@ -43,6 +43,11 @@ resources:
 - argocd/rbac/openshift-virtualization.yaml
 - argocd/namespaces/openshift-virtualization.yaml
 
+# Instana Server
+- argocd/namespaces/instana-core.yaml
+- argocd/namespaces/instana-units.yaml
+
+
 # turbonomic
 - argocd/namespaces/turbonomic.yaml
 
