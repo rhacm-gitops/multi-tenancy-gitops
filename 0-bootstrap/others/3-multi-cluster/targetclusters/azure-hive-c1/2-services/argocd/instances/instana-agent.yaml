@@ -50,9 +50,9 @@ spec:
             # listenAddress: *
 
             # agent.endpointHost is the hostname of the Instana server your agents will connect to.
-            endpointHost: ec2-3-22-248-37.us-east-2.compute.amazonaws.com
+            endpointHost: ingress-instana.apps.rhacm-gitops.ibmglb.ibm-gtmaa.dev
             # agent.endpointPort is the port number (as a String) of the Instana server your agents will connect to.
-            endpointPort: 1444
+            endpointPort: 443
 
             # These are additional backends the Instana agent will report to besides
             # the one configured via the `agent.endpointHost`, `agent.endpointPort` and `agent.key` setting
