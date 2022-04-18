@@ -1,9 +1,9 @@
 resources:
 # RHACM Policies
-# - argocd/policies/install-gitops.yaml
+- argocd/policies/install-gitops.yaml
 
 # RHACM Credentials
-# - argocd/providers/credentials.yaml
+- argocd/providers/credentials.yaml
 
 # RHACM Hive Clusters
 # - argocd/clusters/azure-hive-c1.yaml
