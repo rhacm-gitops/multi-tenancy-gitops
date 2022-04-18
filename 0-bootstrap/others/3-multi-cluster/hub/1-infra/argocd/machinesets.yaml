@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "rhacm-gitops-q3ezp"
+          infrastructureId: "rhacm-gitops-h45h8"
           # cloudProvider.name set to aws, azure, ibmcloud or vsphere
           # cloudProvider.managed set to true for ROSA, ARO, ROKS
           cloudProvider:
