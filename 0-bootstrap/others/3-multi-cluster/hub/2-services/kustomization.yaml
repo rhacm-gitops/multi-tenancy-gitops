@@ -58,8 +58,8 @@ resources:
 # Required for IBM MQ
 #- argocd/instances/openldap.yaml
 # Required for IBM ACE, IBM MQ
-# - argocd/operators/cert-manager.yaml
-# - argocd/instances/cert-manager-instance.yaml
+- argocd/operators/cert-manager.yaml
+- argocd/instances/cert-manager-instance.yaml
 
 # Sealed Secrets
 #- argocd/instances/sealed-secrets.yaml
@@ -102,8 +102,8 @@ resources:
 # - argocd/instances/rhacm-observability-instance.yaml
 
 # External Secrets Operator
-# - argocd/operators/external-secrets.yaml
-# - argocd/instances/external-secrets.yaml
+- argocd/operators/external-secrets.yaml
+- argocd/instances/external-secrets.yaml
 
 # OpenShift Virtualization
 # - argocd/operators/openshift-virtualization.yaml
