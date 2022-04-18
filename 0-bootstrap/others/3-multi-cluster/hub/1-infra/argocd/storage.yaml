@@ -27,4 +27,9 @@ spec:
   syncPolicy:
     automated:
       prune: true
-      selfHeal: false  #TODO FIX CHAR
+      selfHeal: true
+  ignoreDifferences:
+  - group: ""
+    kind: StorageCluster
+    jsonPointers:
+    - /spec/storageDeviceSets/0/dataPVCTemplate/spec/resources/requests/storage
