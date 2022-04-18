@@ -97,17 +97,17 @@ resources:
 #- argocd/instances/baas-instance.yaml
 
 # RHACM
-- argocd/operators/rhacm-operator.yaml
-- argocd/instances/rhacm-instance.yaml
-- argocd/instances/rhacm-observability-instance.yaml
+# - argocd/operators/rhacm-operator.yaml
+# - argocd/instances/rhacm-instance.yaml
+# - argocd/instances/rhacm-observability-instance.yaml
 
 # External Secrets Operator
-- argocd/operators/external-secrets.yaml
-- argocd/instances/external-secrets.yaml
+# - argocd/operators/external-secrets.yaml
+# - argocd/instances/external-secrets.yaml
 
 # OpenShift Virtualization
-- argocd/operators/openshift-virtualization.yaml
-- argocd/instances/openshift-virtualization.yaml
+# - argocd/operators/openshift-virtualization.yaml
+# - argocd/instances/openshift-virtualization.yaml
 
 patches:
 - target:
