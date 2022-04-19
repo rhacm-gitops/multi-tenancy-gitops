@@ -104,6 +104,10 @@ spec:
   #   kind: MultiClusterHub
   - group: observability.open-cluster-management.io
     kind: MultiClusterObservability
+  - group: admissionregistration.k8s.io
+    kind: ValidatingWebhookConfiguration
+  - group: admissionregistration.k8s.io
+    kind: MutatingWebhookConfiguration
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
