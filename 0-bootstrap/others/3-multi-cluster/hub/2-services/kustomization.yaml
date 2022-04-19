@@ -103,7 +103,7 @@ resources:
 
 # External Secrets Operator
 - argocd/operators/external-secrets.yaml
-# - argocd/instances/external-secrets.yaml
+- argocd/instances/external-secrets.yaml
 
 # OpenShift Virtualization
 # - argocd/operators/openshift-virtualization.yaml
