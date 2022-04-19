@@ -111,6 +111,7 @@ resources:
 
 # Instana Operator
 - argocd/operators/instana-operator.yaml
+- argocd/instances/instana-datastores.yaml
 
 patches:
 - target:
