@@ -110,7 +110,7 @@ resources:
 # - argocd/instances/openshift-virtualization.yaml
 
 # Instana Operator
-- argocd/operators/instana-operator.yaml
+# - argocd/operators/instana-operator.yaml
 
 patches:
 - target:
