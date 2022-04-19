@@ -45,6 +45,7 @@ resources:
 - argocd/namespaces/openshift-virtualization.yaml
 
 # Instana Server
+- argocd/namespaces/instana-operator.yaml
 - argocd/namespaces/instana-core.yaml
 - argocd/namespaces/instana-units.yaml
 
