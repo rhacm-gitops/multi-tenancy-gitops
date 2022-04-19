@@ -109,6 +109,9 @@ resources:
 # - argocd/operators/openshift-virtualization.yaml
 # - argocd/instances/openshift-virtualization.yaml
 
+# Instana Operator
+- argocd/operators/instana-operator.yaml
+
 patches:
 - target:
     group: argoproj.io
