@@ -11,7 +11,7 @@ metadata:
     gitops.tier.source: git
 spec:
   destination:
-    namespace: instana-unit
+    namespace: instana-units
     server: 'https://kubernetes.default.svc'
   project: services
   source:
