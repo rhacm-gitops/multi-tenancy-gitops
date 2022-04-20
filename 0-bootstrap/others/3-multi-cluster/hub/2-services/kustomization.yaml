@@ -85,8 +85,15 @@ resources:
 #- argocd/instances/openshift-service-mesh-instance.yaml
 
 # Monitoring
-# - argocd/instances/instana-agent.yaml
+- argocd/instances/instana-agent.yaml
 #- argocd/instances/instana-robot-shop.yaml
+
+# Instana Operator
+- argocd/operators/instana-operator.yaml
+- argocd/instances/instana-datastores.yaml
+- argocd/instances/instana-core.yaml
+
+
 
 # Spectrum Protect Plus
 #- argocd/operators/spp-catalog.yaml
@@ -108,11 +115,6 @@ resources:
 # OpenShift Virtualization
 # - argocd/operators/openshift-virtualization.yaml
 # - argocd/instances/openshift-virtualization.yaml
-
-# Instana Operator
-- argocd/operators/instana-operator.yaml
-- argocd/instances/instana-datastores.yaml
-- argocd/instances/instana-core.yaml
 
 patches:
 - target:
