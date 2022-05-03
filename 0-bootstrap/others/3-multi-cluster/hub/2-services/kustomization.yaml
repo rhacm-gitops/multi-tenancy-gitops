@@ -85,14 +85,14 @@ resources:
 #- argocd/instances/openshift-service-mesh-instance.yaml
 
 # Monitoring
-- argocd/instances/instana-agent.yaml
+# - argocd/instances/instana-agent.yaml
 #- argocd/instances/instana-robot-shop.yaml
 
 # Instana Operator
-- argocd/operators/instana-operator.yaml
-- argocd/instances/instana-datastores.yaml
-- argocd/instances/instana-core.yaml
-- argocd/instances/instana-unit.yaml
+# - argocd/operators/instana-operator.yaml
+# - argocd/instances/instana-datastores.yaml
+# - argocd/instances/instana-core.yaml
+# - argocd/instances/instana-unit.yaml
 
 
 
@@ -107,7 +107,8 @@ resources:
 # RHACM
 - argocd/operators/rhacm-operator.yaml
 - argocd/instances/rhacm-instance.yaml
-- argocd/instances/rhacm-observability-instance.yaml
+
+# - argocd/instances/rhacm-observability-instance.yaml
 
 # External Secrets Operator
 - argocd/operators/external-secrets.yaml

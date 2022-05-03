@@ -9,14 +9,8 @@ spec:
   name: openshift-gitops-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: openshift-gitops-operator.v1.4.5
+  startingCSV: openshift-gitops-operator.v1.5.0
   config:
     env:
     - name: DISABLE_DEFAULT_ARGOCD_INSTANCE
       value: 'TRUE'
-        #    - name: RELATED_IMAGE_ARGOCD_IMAGE
-        #value: registry.redhat.io/openshift-gitops-1/argocd-rhel8@sha256:28dfb790f234e8819c7641971956a08e8c7167d6fe8d61594bb952eb5ca84ab1
-        #- name: ARGOCD_IMAGE
-        #value: registry.redhat.io/openshift-gitops-1/argocd-rhel8@sha256:28dfb790f234e8819c7641971956a08e8c7167d6fe8d61594bb952eb5ca84ab1
-        #- name: ARGOCD_REPOSERVER_IMAGE
-        #value: registry.redhat.io/openshift-gitops-1/argocd-rhel8@sha256:28dfb790f234e8819c7641971956a08e8c7167d6fe8d61594bb952eb5ca84ab1
