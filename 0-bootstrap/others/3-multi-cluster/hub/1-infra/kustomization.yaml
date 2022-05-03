@@ -41,8 +41,8 @@ resources:
 - argocd/namespaces/rhacm-observability.yaml
 
 # OpenShift Virtualization
-- argocd/rbac/openshift-virtualization.yaml
-- argocd/namespaces/openshift-virtualization.yaml
+# - argocd/rbac/openshift-virtualization.yaml
+# - argocd/namespaces/openshift-virtualization.yaml
 
 # Instana Server
 # - argocd/rbac/instana.yaml
@@ -52,7 +52,7 @@ resources:
 
 
 # turbonomic
-- argocd/namespaces/turbonomic.yaml
+# - argocd/namespaces/turbonomic.yaml
 
 
 patches:
