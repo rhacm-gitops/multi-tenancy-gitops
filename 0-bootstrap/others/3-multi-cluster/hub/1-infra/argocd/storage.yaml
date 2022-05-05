@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         odf-operator:
-          channel: stable-4.9
+          channel: stable-4.10
           sizeGiB: 1024
           storageClass: ibmc-vpc-block-10iops-tier
           argo:
