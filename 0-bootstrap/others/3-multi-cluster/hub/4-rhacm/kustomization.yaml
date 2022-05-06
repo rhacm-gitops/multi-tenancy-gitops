@@ -1,6 +1,6 @@
 resources:
 # RHACM Policies
-- argocd/policies/install-gitops.yaml
+# - argocd/policies/install-gitops.yaml
 
 # RHACM Credentials
 - argocd/providers/credentials.yaml
