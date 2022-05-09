@@ -18,16 +18,18 @@ spec:
     helm:
       values: |
         refarch-machinesets:
-          infrastructureId: "${INFRASTRUCTURE_ID}"
+          infrastructureId: azure-hive-c1-lfkr2
           # cloudProvider.name set to aws, azure, ibmcloud or vsphere
           # cloudProvider.managed set to true for ROSA, ARO, ROKS
           cloudProvider:
-            name: "${PLATFORM}" 
-            managed: ${MANAGED}
+            name: "azure" 
+            managed: false
           # only for "aws", "ibmcloud" or "azure" maybe "gcp"
           cloud:
-            region: ${REGION}
-            image: ${IMAGE_NAME}
+            region: "eastus2"
+            image: notused
+            infraNodes:
+              nodeCount: "0"
           # only for "vsphere" - ignored for other
           vsphere:
             networkName: ${VS_NETWORK}
