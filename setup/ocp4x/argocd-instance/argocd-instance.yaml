@@ -600,6 +600,11 @@ spec:
                 hs.message = condition.message
                 return hs
               end
+              if condition.type == "Hibernating" and condition.status == "False" and condition.reason == "Running" then
+                hs.status = "Healthy"
+                hs.message = condition.message
+                return hs
+              end
             end
           end
         end
