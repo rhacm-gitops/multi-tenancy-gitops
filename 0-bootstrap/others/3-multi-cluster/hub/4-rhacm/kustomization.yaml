@@ -7,7 +7,7 @@ resources:
 
 # RHACM Hive Clusters
 - argocd/clusters/azure-hive-c1.yaml
-- argocd/clusters/azure-hive-c2.yaml
+# - argocd/clusters/azure-hive-c2.yaml
 
 
 patches:
