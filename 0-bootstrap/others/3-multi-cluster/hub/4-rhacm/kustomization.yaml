@@ -6,8 +6,9 @@ resources:
 - argocd/providers/credentials.yaml
 
 # RHACM Hive Clusters
-- argocd/clusters/azure-hive-c1.yaml
-- argocd/clusters/azure-hive-c2.yaml
+- argocd/clusterset/azure-clusterset.yaml
+# - argocd/clusters/azure-hive-c1.yaml
+# - argocd/clusters/azure-hive-c2.yaml
 
 
 patches:
