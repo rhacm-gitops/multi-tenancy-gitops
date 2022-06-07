@@ -33,6 +33,7 @@ spec:
             serviceNetwork:
               cidr: 172.30.0.0/16
           clusterSet: azure-clusterset
+          submariner: enabled
         cloud:
           provider: "Azure"
           region: "eastus2"
