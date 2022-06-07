@@ -33,7 +33,7 @@ spec:
               cidr: 10.132.0.0/14
             serviceNetwork:
               cidr: 172.31.0.0/16
-          clusterset: azure-clusterset
+          clusterSet: azure-clusterset
         cloud:
           provider: "Azure"
           region: "eastus2"
