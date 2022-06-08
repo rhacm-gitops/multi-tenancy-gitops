@@ -32,15 +32,17 @@ spec:
               cidr: 10.128.0.0/14
             serviceNetwork:
               cidr: 172.30.0.0/16
+
           clusterSet: azure-clusterset
           submariner: enabled
+
         cloud:
           provider: "Azure"
           region: "eastus2"
           azure:
             baseDomainResourceGroupName: "ncolon-openshift4-rg"
-  ignoreDifferences:
-  - group: hive.openshift.io
-    kind: ClusterDeployment
-    jsonPointers:
-    - /spec/installed
+  # ignoreDifferences:
+  # - group: hive.openshift.io
+  #   kind: ClusterDeployment
+  #   jsonPointers:
+  #   - /spec/installed
