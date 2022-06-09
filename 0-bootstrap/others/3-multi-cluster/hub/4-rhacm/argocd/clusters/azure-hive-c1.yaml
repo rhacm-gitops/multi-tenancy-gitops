@@ -32,6 +32,8 @@ spec:
               cidr: 10.128.0.0/14
             serviceNetwork:
               cidr: 172.30.0.0/16
+            machineNetwork:
+              cidr: 10.0.0.0/16
 
           clusterSet: azure-clusterset
           submariner: enabled
