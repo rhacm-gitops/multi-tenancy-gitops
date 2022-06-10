@@ -50,7 +50,7 @@ spec:
             # listenAddress: *
 
             # agent.endpointHost is the hostname of the Instana server your agents will connect to.
-            endpointHost: ingress-instana.apps.rhacm-gitops.ibmglb.ibm-gtmaa.dev
+            endpointHost: ingress-instana.apps.multi-cluster-gitops.ibmglb.ibm-gtmaa.dev 
             # agent.endpointPort is the port number (as a String) of the Instana server your agents will connect to.
             endpointPort: 443
 
