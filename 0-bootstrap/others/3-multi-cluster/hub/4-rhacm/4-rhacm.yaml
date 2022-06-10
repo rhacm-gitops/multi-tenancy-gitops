@@ -22,6 +22,8 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: azure-hive-c3
     server: https://kubernetes.default.svc
+  - namespace: azure-clusterset-broker
+    server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace
