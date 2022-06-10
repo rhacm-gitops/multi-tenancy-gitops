@@ -38,7 +38,7 @@ resources:
 - argocd/namespaces/open-cluster-management.yaml
 - argocd/namespaces/rhacm-policies.yaml
 - argocd/namespaces/multi-tenancy-gitops-channel.yaml
-- argocd/namespaces/rhacm-observability.yaml
+# - argocd/namespaces/rhacm-observability.yaml
 
 # OpenShift Virtualization
 # - argocd/rbac/openshift-virtualization.yaml
