@@ -39,7 +39,7 @@ resources:
 # - argocd/rhacm-provider-credentials.yaml
 
 # RHACM HADR with ODF
-- argocd/rbac/ofdmirror.yaml
+- argocd/rbac/odfmirror.yaml
 
 patches:
 - target:
