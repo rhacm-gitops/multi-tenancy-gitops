@@ -37,6 +37,10 @@ resources:
 # - argocd/namespace-rhacm-policies.yaml
 # - argocd/rhacm-policies-install-gitops.yaml
 # - argocd/rhacm-provider-credentials.yaml
+
+# RHACM HADR with ODF
+- argocd/rbac/ofdmirror.yaml
+
 patches:
 - target:
     group: argoproj.io
