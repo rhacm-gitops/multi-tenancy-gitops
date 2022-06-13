@@ -83,6 +83,10 @@ spec:
     kind: Tuned
   - group: "batch"
     kind: Job
+  - group: storage.k8s.io
+    kind: VolumeReplicationClass
+  - group: eplication.storage.openshift.io
+    kind: VolumeReplicationClass
   
 
   roles:

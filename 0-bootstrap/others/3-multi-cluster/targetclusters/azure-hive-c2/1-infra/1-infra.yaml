@@ -83,7 +83,11 @@ spec:
     kind: Tuned
   - group: "batch"
     kind: Job
-  
+  - group: storage.k8s.io
+    kind: VolumeReplicationClass
+  - group: eplication.storage.openshift.io
+    kind: VolumeReplicationClass
+
 
   roles:
   # A role which provides read-only access to all applications in the project
