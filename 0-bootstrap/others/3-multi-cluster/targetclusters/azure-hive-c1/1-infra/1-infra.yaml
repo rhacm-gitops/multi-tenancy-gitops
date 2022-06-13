@@ -84,7 +84,7 @@ spec:
   - group: "batch"
     kind: Job
   - group: storage.k8s.io
-    kind: Storage
+    kind: StorageClass
   - group: replication.storage.openshift.io
     kind: VolumeReplicationClass
   
