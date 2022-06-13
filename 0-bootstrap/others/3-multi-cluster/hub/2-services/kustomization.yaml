@@ -118,6 +118,11 @@ resources:
 # - argocd/operators/openshift-virtualization.yaml
 # - argocd/instances/openshift-virtualization.yaml
 
+# HADR with ODF/RHACM
+- argocd/operators/odf-multicluster-orchestrator.yaml
+# - argocd/instances/odf-multicluster-orchestrator.yaml
+
+
 patches:
 - target:
     group: argoproj.io
