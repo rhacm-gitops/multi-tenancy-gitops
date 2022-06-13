@@ -119,7 +119,7 @@ resources:
 # - argocd/instances/openshift-virtualization.yaml
 
 # HADR with ODF/RHACM
-- argocd/operators/odf-multicluster-orchestrator.yaml
+- argocd/operators/odf-multicluster-orchestrator-operator.yaml
 # - argocd/instances/odf-multicluster-orchestrator.yaml
 
 
