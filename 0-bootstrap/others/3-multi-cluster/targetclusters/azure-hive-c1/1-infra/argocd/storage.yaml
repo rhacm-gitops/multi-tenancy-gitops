@@ -23,7 +23,9 @@ spec:
         argo:
           namespace: openshift-gitops
           serviceAccount: openshift-gitops-cntk-argocd-application-controller
-        enableODFReplication: true
+        enableODFReplication: true4
+        replication:
+          enabled: true
   syncPolicy:
     automated:
       prune: true
