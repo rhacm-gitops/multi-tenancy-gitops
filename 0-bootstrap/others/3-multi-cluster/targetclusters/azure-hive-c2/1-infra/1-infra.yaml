@@ -85,7 +85,7 @@ spec:
     kind: Job
   - group: storage.k8s.io
     kind: VolumeReplicationClass
-  - group: eplication.storage.openshift.io
+  - group: replication.storage.openshift.io
     kind: VolumeReplicationClass
 
 
