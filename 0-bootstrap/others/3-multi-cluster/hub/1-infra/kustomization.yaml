@@ -35,9 +35,11 @@ resources:
 
 # RHACM
 - argocd/rbac/rhacm.yaml
+- argocd/rbac/odfmirror.yaml
 - argocd/namespaces/open-cluster-management.yaml
 - argocd/namespaces/rhacm-policies.yaml
 - argocd/namespaces/multi-tenancy-gitops-channel.yaml
+
 # - argocd/namespaces/rhacm-observability.yaml
 
 # OpenShift Virtualization
