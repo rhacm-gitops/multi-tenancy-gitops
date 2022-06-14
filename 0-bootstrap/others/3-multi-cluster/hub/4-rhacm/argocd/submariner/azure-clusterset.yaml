@@ -18,7 +18,7 @@ spec:
     helm:
       values: |
         clusterSet:
-          name: azure-clusterset2
+          name: azure-clusterset
 
   syncPolicy:
     automated:

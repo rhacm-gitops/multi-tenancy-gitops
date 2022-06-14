@@ -6,9 +6,9 @@ resources:
 - argocd/providers/credentials.yaml
 
 # RHACM Hive Clusters
-- argocd/clusterset/azure-clusterset.yaml
+# - argocd/clusterset/azure-clusterset.yaml
+# - argocd/brokers/submariner-broker.yaml
 - argocd/submariner/azure-clusterset.yaml
-- argocd/brokers/submariner-broker.yaml
 - argocd/clusters/azure-hive-c1.yaml
 - argocd/clusters/azure-hive-c2.yaml
 
