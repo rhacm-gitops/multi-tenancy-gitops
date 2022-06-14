@@ -58,6 +58,8 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: rhacm-policies
     server: https://kubernetes.default.svc
+  - namespace: openshift-dr-system
+    server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace
