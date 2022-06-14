@@ -366,6 +366,12 @@ rules:
       - policy
     resources:
       - podsecuritypolicies
+  - verbs:
+      - '*'
+    apiGroups:
+      - objectbucket.io
+    resources:
+      - objectbucketclaims
   # - verbs:
   #     - '*'
   #   apiGroups:
