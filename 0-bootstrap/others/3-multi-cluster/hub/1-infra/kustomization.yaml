@@ -42,11 +42,6 @@ resources:
 # RHACM Observability
 # - argocd/namespaces/rhacm-observability.yaml
 
-# RHACM HADR with ODF
-- argocd/namespaces/openshift-dr-system.yaml
-- argocd/pvcs/obc-ordbucket.yaml
-
-
 # OpenShift Virtualization
 # - argocd/rbac/openshift-virtualization.yaml
 # - argocd/namespaces/openshift-virtualization.yaml
