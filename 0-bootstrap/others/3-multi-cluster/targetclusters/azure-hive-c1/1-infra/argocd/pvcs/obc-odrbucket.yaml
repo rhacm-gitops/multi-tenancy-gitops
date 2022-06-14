@@ -10,7 +10,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: openshift-dr-system
     server: https://kubernetes.default.svc
   project: infra
   source:

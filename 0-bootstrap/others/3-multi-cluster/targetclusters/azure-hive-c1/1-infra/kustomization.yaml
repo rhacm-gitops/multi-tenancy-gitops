@@ -41,7 +41,7 @@ resources:
 # RHACM HADR with ODF
 - argocd/rbac/odfmirror.yaml
 - argocd/namespaces/openshift-dr-system.yaml
-# - argocd/pvcs/obc-odrbucket.yaml
+- argocd/pvcs/obc-odrbucket.yaml
 
 patches:
 - target:
