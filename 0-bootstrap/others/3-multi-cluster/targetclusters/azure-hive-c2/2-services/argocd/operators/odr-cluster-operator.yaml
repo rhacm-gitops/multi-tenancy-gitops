@@ -12,7 +12,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: openshift-dr-system
+    namespace: openshift-operators
     server: https://kubernetes.default.svc
   project: services
   source:
