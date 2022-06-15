@@ -11,7 +11,7 @@ resources:
 - argocd/clusters/azure-hive-c2.yaml
 
 # RHACM HADR with ODF
-- argocd/configsync.yaml
+- argocd/hadrconfig.yaml
 
 
 patches:
