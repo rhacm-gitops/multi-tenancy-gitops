@@ -104,6 +104,9 @@ resources:
 - argocd/operators/external-secrets.yaml
 - argocd/instances/external-secrets.yaml
 
+# RHACM HADR with ODF
+- argocd/operators/odr-cluster.yaml
+
 patches:
 - target:
     group: argoproj.io
