@@ -6,12 +6,12 @@ resources:
 - argocd/providers/credentials.yaml
 
 # RHACM Hive Clusters
-# - argocd/submariner/azure-clusterset.yaml
-# - argocd/clusters/azure-hive-c1.yaml
-# - argocd/clusters/azure-hive-c2.yaml
+- argocd/submariner/azure-clusterset.yaml
+- argocd/clusters/azure-hive-c1.yaml
+- argocd/clusters/azure-hive-c2.yaml
 
 # RHACM HADR with ODF
-# - argocd/hadrconfig.yaml
+- argocd/hadrconfig.yaml
 
 
 patches:
