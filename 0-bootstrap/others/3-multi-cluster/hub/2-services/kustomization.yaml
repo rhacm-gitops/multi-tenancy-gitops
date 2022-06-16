@@ -118,12 +118,6 @@ resources:
 # - argocd/operators/openshift-virtualization.yaml
 # - argocd/instances/openshift-virtualization.yaml
 
-# HADR with ODF/RHACM
-# TODO: Move to 4-rhacm
-# - argocd/operators/odr-hub-operator.yaml
-# - argocd/operators/odf-multicluster-orchestrator-operator.yaml
-# - argocd/instances/odf-multicluster-orchestrator-instance.yaml
-
 
 patches:
 - target:
