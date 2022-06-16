@@ -5,7 +5,7 @@ metadata:
   labels:
     gitops.tier.layer: rhacm
   annotations:
-    argocd.argoproj.io/sync-wave: "405"
+    argocd.argoproj.io/sync-wave: "410"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
