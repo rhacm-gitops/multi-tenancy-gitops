@@ -120,7 +120,7 @@ resources:
 
 # HADR with ODF/RHACM
 - argocd/operators/odf-multicluster-orchestrator-operator.yaml
-- argocd/instances/odf-multicluster-orchestrator-instance.yaml
+# - argocd/instances/odf-multicluster-orchestrator-instance.yaml
 - argocd/operators/odr-hub-operator.yaml
 
 
