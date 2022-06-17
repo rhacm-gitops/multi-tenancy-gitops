@@ -18,10 +18,13 @@ spec:
     helm:
       values: |
         clusters:
-        - name: azure-hive-c1
-          role: primary
-        - name: azure-hive-c2
-          role: secondary
+          - name: azure-hive-c1
+            role: primary
+          - name: azure-hive-c2
+            role: secondary
+        schedulingIntervals:
+          - 5m
+          - 15m
 
   syncPolicy:
     automated:
