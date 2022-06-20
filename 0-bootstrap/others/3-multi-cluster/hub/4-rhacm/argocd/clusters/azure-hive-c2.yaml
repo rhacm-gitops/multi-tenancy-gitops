@@ -37,6 +37,7 @@ spec:
 
           clusterSet: azure-clusterset
           submariner: enabled
+          installExternalSecrets: true
 
         cloud:
           provider: "Azure"
