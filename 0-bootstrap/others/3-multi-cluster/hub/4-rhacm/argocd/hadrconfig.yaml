@@ -23,6 +23,7 @@ spec:
           - name: azure-hive-c2
             role: secondary
         schedulingIntervals:
+          - 1m
           - 5m
           - 15m
 
