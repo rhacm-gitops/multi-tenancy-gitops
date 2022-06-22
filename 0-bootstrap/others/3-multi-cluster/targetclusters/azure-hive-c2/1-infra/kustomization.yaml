@@ -27,7 +27,7 @@ resources:
 #- argocd/scc-wkc-iis.yaml
 #- argocd/infraconfig.yaml
 - argocd/machinesets.yaml
-# - argocd/storage.yaml
+- argocd/storage.yaml
 
 # External Secrets Operator
 - argocd/rbac/externalsecrets.yaml
