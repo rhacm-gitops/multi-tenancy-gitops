@@ -7,14 +7,14 @@ resources:
 
 # RHACM Hive Clusters
 - argocd/submariner/azure-clusterset.yaml
-- argocd/clusters/azure-hive-c1.yaml
-- argocd/clusters/azure-hive-c2.yaml
+# - argocd/clusters/azure-hive-c1.yaml
+# - argocd/clusters/azure-hive-c2.yaml
 
 # RHACM HADR with ODF
 - argocd/operators/odr-hub-operator.yaml
 - argocd/operators/odf-multicluster-orchestrator-operator.yaml
 - argocd/instances/odf-multicluster-orchestrator-instance.yaml
-- argocd/hadrconfig.yaml
+# - argocd/hadrconfig.yaml
 
 
 patches:
