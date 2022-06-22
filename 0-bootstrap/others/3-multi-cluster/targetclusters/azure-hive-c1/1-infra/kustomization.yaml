@@ -26,7 +26,7 @@ resources:
 #- argocd/scc-wkc-iis.yaml
 #- argocd/infraconfig.yaml
 - argocd/machinesets.yaml
-- argocd/storage.yaml
+# - argocd/storage.yaml
 
 # External Secrets Operator
 - argocd/rbac/externalsecrets.yaml
@@ -41,7 +41,7 @@ resources:
 # RHACM HADR with ODF
 - argocd/rbac/odfmirror.yaml
 - argocd/namespaces/openshift-dr-system.yaml
-- argocd/pvcs/obc-odrbucket.yaml
+# - argocd/pvcs/obc-odrbucket.yaml
 
 patches:
 - target:
