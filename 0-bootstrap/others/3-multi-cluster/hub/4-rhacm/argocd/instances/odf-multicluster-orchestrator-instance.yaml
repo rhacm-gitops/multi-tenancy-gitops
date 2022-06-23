@@ -18,7 +18,7 @@ spec:
     path: instances/odf-multicluster-orchestrator
     helm:
       values: |
-        name: mirrorpeer-azure-c1-azure-c2
+        name: mirrorpeer-c1-c2
         peers:
         - clusterName: azure-hive-c1
         - clusterName: azure-hive-c2
